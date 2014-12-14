@@ -1,6 +1,6 @@
 ## Caching the inverse of a matrix
 
-## "Funcion" (list) to assign, to obtain the matrix and its inverse
+## "Function" (list) to assign, to obtain the matrix and its inverse
 
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -9,6 +9,7 @@ makeCacheMatrix <- function(x = matrix()) {
     get <- function() x
     setinv <- function(invMat) inv <<- invMat
     getinv <- function() inv
+    
     
     list(get = get,
          setinv = setinv,
